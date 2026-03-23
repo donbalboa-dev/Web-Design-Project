@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="picture/culasilogo.png" type="image/png">
+    <title>Palamahawan sa Culasi Slope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   
+</head>
+    <body>
+
+        <!--------- home section ------------->
+        <header class="header" >
+            <div class="logo">
+                <a href="index.html"><img src="picture/culasilogo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="active">Home</a>                    
+                <a href="#feature">Hot Deals</a>                                       
+                <a href="#cuisine">Cuisine</a>               
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact Us</a>    
+                <a href="#about">About Us</a>    
+            </nav>
+        
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+            <!-- Full-Screen Menu -->
+            <div class="full-screen-menu" id="full-screen-menu">
+                <a href="#home" class="active">Home</a>                  
+                <a href="#feature">Hot Deals</a>                                             
+                <a href="#cuisine">Cuisine</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact Us</a>    
+                <a href="#about">About Us</a>              
+            </div>
+        </header>
+        
+
+                    <section class="home" id="home">
+                    <div class="home-content">
+                     <h1>Palamahawan sa Culasi Slope</h1>   
+                    <h2>Experience the Heart of
+                        Filipino Flavor in
+                        Every Bite!</h2>
+                                            
+                        <div class="contextbtn">
+                            <a href="#cuisine">Our Menu</a>
+                            <a href="#about">About Us</a>
+                        </div>                        
+                    </div>
+                   
+                    <img src="picture/halohalo.png" alt="Right Image" class="right-image">
+                      
+
+                        
+                        
+                    <div class="social-icons">
+                        <a href="#" onclick="playMusic(event); return false;" class="social-icon-container">
+                            <div class="social-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <span class="tooltip">Play BG Music</span>
+                        </a>
+                        <audio id="music" src="music/FilipinoFoods.mp3"></audio>
+                    
+                        <a href="https://www.facebook.com/PalamahawanRestoBar" target="_blank" class="social-icon-container">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <span class="tooltip">Like us on Facebook!</span>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/palamahawanrestobar?igsh=MXc3NWc4MWhlaTh2Zw==" target="_blank" class="social-icon-container">
+                            <div class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <span class="tooltip">Follow us on Instagram!</span>
+                        </a>
+                    
+                        <a href="https://youtube.com/@palamahawan?si=iG4t7BsqYS19EWAs" target="_blank" class="social-icon-container">
+                            <div class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <span class="tooltip">Subscribe to our YouTube Channel!</span>
+                        </a>
+                    
+                        <a href="https://www.tiktok.com/@palamahawan?_t=8qCiH4LIeSV&_r=1" target="_blank" class="social-icon-container">
+                            <div class="social-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <span class="tooltip">Follow us on TikTok!</span>
+                        </a>
+                    </div>                                                 
+            </section>
+            
+
+            
+            <section id="feature"> 
+                <div class="curved"></div> 
+                <div class="home-container">
+                    <!-- Left side: Food images and link to cuisine -->
+                    <div class="food-section">
+                        <h2>Check This Out!</h2>
+                        <div class="food-images">
+                            <img class="food-image" src="picture/feature/feature1.png" alt="Dish 1">
+                            <img class="food-image" src="picture/feature/feature2.png" alt="Dish 2">
+                            <img class="food-image" src="picture/feature/feature3.png" alt="Dish 3">
+                            <img class="food-image" src="picture/feature/conbo.png" alt="Dish 4">
+                        </div>
+                        <a href="#cuisine" class="btn-to-cuisine">Explore Our Dishes</a>
+                    </div>
+            
+                    <!-- Right side: Live Music Advertisement -->
+                    <div class="live-music-section">
+                       
+                        <img class="food-image" src="picture/feature/live.png" alt="Live Music Event">
+                    </div>
+                </div>
+                
+            </section>
+              
+     
+   <!--------- cuisine section ------------->    
+   <section id="cuisine" class="cuisine-section">
+    <div class="curved"></div>
+    <div class="section-container">
+    <div class="sidebar">
+        <!-- Search Bar -->
+        <h1>Looking for something tasty?</h1>
+        <input type="text" id="searchBar" placeholder="Search food..." class="search-bar">
+
+        <!-- Dropdown (Visible only on small screens) -->
+        <div class="category-select-container">
+            <label for="category-select">Select Category:</label>
+            <select id="categorySelect" class="category-select">
+                <option value="menu">Menu List</option>
+                <option value="main-dish">Main Dish</option>
+                <option value="short">Short Orders</option>
+                <option value="pica">Pica-Pica</option>
+                <option value="silog">Silog Meals</option>
+                <option value="pizza">Pizza</option>
+                <option value="desserts">Shakes & Desserts</option>
+                <option value="drinks">Drinks & Liquors</option>
+            </select>
+        </div>    
+
+
+        <!-- Category Buttons -->
+        <div class="categories">
+            <button class="category-button" data-category="menu">Menu List</button>
+            <button class="category-button" data-category="main-dish">Main Dish</button>
+            <button class="category-button" data-category="short">Short Order</button>
+            <button class="category-button" data-category="pica">Pica-Pica</button>
+            <button class="category-button" data-category="silog">Silog Meals</button>
+            <button class="category-button" data-category="pizza">Pizza</button>
+            <button class="category-button" data-category="desserts">Shakes & Desserts</button>
+            <button class="category-button" data-category="drinks">Drinks & Liquors</button>
+        </div>
+    </div>
+
+    <div class="image-display">
+        <div class="image-list" id="imageList">
+            </div>
+        </div>
+    </div>     
+</section>
+ 
+
+     <!--------- gallery section ------------->   
+     <section id="gallery" class="customer-features">
+        <div class="curved"></div>
+
+      <div class="imgcontainer">
+        <h2>Customer Spotlight</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="picture/gallery/1.jpg" alt="Customer Feature 1" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/2.jpg" alt="Customer Feature 2" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/3.jpg" alt="Customer Feature 3" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/4.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/5.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/6.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/7.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/8.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/9.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/10.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/11.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/12.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/13.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/14.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/15.jpg" alt="Customer Feature 4" />
+            </div>
+            <div class="feature-item">
+                <img src="picture/gallery/16.jpg" alt="Customer Feature 4" />
+            </div>
+          
+        </div>
+    </div>
+    
+        <div id="imageModal" class="modal">
+            <div id="modalOverlay" class="modal-overlay"></div>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
+    </section>
+    
+  
+    
+     <section  class="gallery">      
+        <div class="video-container">
+        <h2>Watch and Enjoy!</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPalamahawanRestoBar%2Fvideos%2F794257218880648%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>                                              
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPalamahawanRestoBar%2Fvideos%2F2729145110585613%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>                                                
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPalamahawanRestoBar%2Fvideos%2F1171182204291041%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>                             
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPalamahawanRestoBar%2Fvideos%2F660686442855752%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>                                                   
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPalamahawanRestoBar%2Fvideos%2F250580471149519%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>                   
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPalamahawanRestoBar%2Fvideos%2F228801706185282%2F&show_text=false&width=273&t=0" width="273" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>                                               
+                </div>  
+               
+                <!-- Add more video items as needed -->
+            </div>
+        </div>
+
+     </section>
+
+
+       <!--------- contact section ------------->   
+       <section id="contact">
+        <div class="curved"></div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch With Us</h2>
+                <p>Phone: 0907-834-1275</p>
+                <p>Email: palamahawan@palamahawan.com</p>
+                <p>palamahawanrestobar@palamahawan.com</p>
+                <h3>Visit Us</h3>
+                <p>Address: Sito Nipa, Brgy. Culasi, Roxas City, Capiz, 5800</p>
+                <p>Opening Hours: 8 AM - 10 PM</p>
+
+       
+
+            <div class="message">
+                <h2>Message us:</h2>
+                <a href="https://www.facebook.com/messages/t/105489404880099" target="_blank">
+                    <i class='fab fa-facebook-messenger bf'></i>
+                </a>               
+                </div>
+                      
+           
+            </div>
+            
+            <div class="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/movvperq" method="POST" onsubmit="handleSubmit(event)"> 
+                    
+                    <h2>Connect With Us & Share Your Feedback</h2>
+                    
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    
+                    <label for="phone">Your Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    
+                    <label for="subject">Subject (Optional)</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+                    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                    
+                    
+                    <button  type="submit" >Send Message</button>
+                </form>       
+            </div>
+             
+        </div> 
+       
+     </section>
+
+ <!--------- ourstore section ------------->    
+ <section id="ourstore" class="ourstore">
+    <div class="iframecontainer">
+        <h1>Location</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1733043893007!6m8!1m7!1sxWUW3-Vorj1ekVC2GB-Dcw!2m2!1d11.60846302515879!2d122.713830243967!3f147.42876974604815!4f8.518219429022835!5f0.7820865974627469" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+ 
+</section>
+ 
+
+     <!--------- about section ------------->                      
+     <section id="about" class="about">
+        <div class="curved"></div> 
+        <div class="aboutcontainer">
+            <div class="section">
+                <div class="resto-photo">
+                    <img src="picture/about/aboutimg.jpg" alt="Resto" class="resto-image culasi">
+                </div>
+                <div class="contentabout aboutcontent">
+                    <h2>About Us</h2>
+                    <p>Welcome to Palamahawan Resto Bar! Our mission is to share the rich culinary traditions of the Philippines with our beloved community.</p>
+                    <p> Our vision is to become a beloved destination where the rich flavors and traditions of Filipino cuisine bring people together. We strive to create a space where every meal fosters connection, celebrates culture, and creates lasting memories. Through our commitment to quality, authenticity, and warm hospitality, we aim to share the joy of Filipino dining with our community, one dish at a time.</p>
+                    <p>With a passion for cooking and a love for family gatherings, our dishes are crafted from traditional recipes using fresh, local ingredients. We invite you to experience the warmth of Filipino hospitality and the joy of sharing a meal with loved ones.</p>
+                    
+                </div>
+            </div>
+
+                <div class="section">
+                    <div class="contentabout">
+                        <h2>Our Story</h2>                  
+                    <p>Palamahawan Resto Bar was born from a dream nurtured by our founder, whose passion for Filipino cuisine inspired the creation of this vibrant dining space. With deep roots in the rich culinary traditions of the Philippines, our founder wanted to share the joy of authentic Filipino dishes with the community.</p>
+                    <p>Leading the restaurant is Jasmin Hanusiak, our dedicated operations manager. With a commitment to excellence and a love for Filipino culture, Jasmin ensures that every dish served reflects our values of quality, tradition, and hospitality. Under her guidance, we craft each recipe using fresh, locally sourced ingredients, creating a warm and welcoming atmosphere where families and friends can gather.</p>
+                    <p>We invite you to be a part of our story, to savor our dishes, and to create memories that will last a lifetime.</p>
+                    </div>
+                    <div class="resto-photo">
+                        <img src="picture/about/jas.jpg" alt="Owner" class="resto-image resto">
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+     <footer>
+        <div class="custom-footer-container">
+            
+            <div class="custom-footer-left">
+                <div class="custom-footer-navbar">
+                    <a href="#home" class="active">Home</a>                    
+                    <a href="#feature">Hot Deals</a>                         
+                    <a href="#cuisine">Cuisine</a>               
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact Us</a>  
+                    <a href="#about">About Us</a>                           
+                </div>
+                <div class="custom-footer-location">                  
+                    <p>Address: Sito Nipa, Brgy. Culasi, Roxas City, Capiz, 5800</p>
+                    <p>Contact No. 0907-834-1275</p>
+                </div>
+            </div>
+    
+            <div class="custom-footer-right">
+                <div class="custom-social-icons">
+                    <div class="custom-social-icon-container">
+                        <a href="https://www.facebook.com/PalamahawanRestoBar" target="_blank">
+                        <i class="fa-brands fa-facebook-f custom-social-icon"></i>
+                        <div class="custom-tooltip">Facebook</div></a>
+                    </div>
+                    <div class="custom-social-icon-container">
+                        <a href="https://www.instagram.com/palamahawanrestobar?igsh=MXc3NWc4MWhlaTh2Zw==" target="_blank">
+                        <i class="fab fa-instagram custom-social-icon"></i>
+                        <div class="custom-tooltip">Instagram</div></a>
+                    </div>
+                    <div class="custom-social-icon-container">
+                        <a href="https://youtube.com/@palamahawan?si=iG4t7BsqYS19EWAs" target="_blank">
+                        <i class="fab fa-youtube custom-social-icon"></i>
+                        <div class="custom-tooltip">YouTube</div></a>
+                    </div>
+                    <div class="custom-social-icon-container">
+                        <a href="https://www.tiktok.com/@palamahawan?_t=8qCiH4LIeSV&_r=1" target="_blank">
+                        <i class="fab fa-tiktok custom-social-icon"></i>
+                        <div class="custom-tooltip">Tiktok</div></a>
+                    </div>
+                </div>
+                <div class="custom-footer-copyright">
+                    <p>Web Developers: Balboa, Donald B. | De Vicente, Philip John D.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+  
+    <script src="index.js"></script>
+    
+
+</body>
+</html>
